@@ -1,16 +1,298 @@
 <!doctype html>
-<html lang="en" data-beasties-container>
-  <head>
-    <meta charset="utf-8">
-    <title>Andfoods | Commercial Plant-Based Dairy Alternatives</title>
-    <base href="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>@font-face{font-family:'Instrument Sans';font-style:italic;font-weight:400 700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/instrumentsans/v4/pxitypc9vsFDm051Uf6KVwgkfoSbSnNPooZAN0lInHGpCWNu2ZGRu3k.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Instrument Sans';font-style:italic;font-weight:400 700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/instrumentsans/v4/pxitypc9vsFDm051Uf6KVwgkfoSbSnNPooZAN0lInHGpCWNu15GR.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1YmV.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
-  <style>*{box-sizing:border-box}html,body{margin:0;padding:0;scroll-behavior:smooth;overscroll-behavior-x:none}body{font-family:Instrument Sans,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;background:#f2ece6;color:#511c06}</style><link rel="stylesheet" href="styles-MEHIQXTC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-MEHIQXTC.css"></noscript></head>
-  <body>
-    <app-root></app-root>
-  <script src="main-MA5I4FMP.js" type="module"></script></body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Andfoods | Commercial Plant-Based Dairy Alternatives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Andfoods builds the next generation of professional plant-based dairy alternatives for food service companies.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" href="fonts/MatterSQTRIAL-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" aria-label="Andfoods home">
+        <img src="assets/andfoods-original/logo.svg" alt="Andfoods" class="brand-logo">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/" class="site-nav__link" data-route="/">Home</a>
+        <a href="/applications/" class="site-nav__link" data-route="/applications">Applications</a>
+        <a href="/our-plants/" class="site-nav__link" data-route="/our-plants">Our Plants</a>
+        <a href="/about-us/" class="site-nav__link" data-route="/about-us">About Us</a>
+        <a href="/contact/" class="site-nav__link" data-route="/contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu"><span></span></button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-menu" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" aria-label="Close menu">×</button>
+    <a href="/" class="mobile-menu__link" data-route="/">Home</a>
+    <a href="/applications/" class="mobile-menu__link" data-route="/applications">Applications</a>
+    <a href="/our-plants/" class="mobile-menu__link" data-route="/our-plants">Our Plants</a>
+    <a href="/about-us/" class="mobile-menu__link" data-route="/about-us">About Us</a>
+    <a href="/contact/" class="mobile-menu__link" data-route="/contact">Contact</a>
+  </aside>
+
+  <main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <video class="hero__media"
+           src="assets/andfoods-original/hero-bg.mp4"
+           poster="assets/andfoods-original/hero-video-poster.jpg"
+           autoplay muted loop playsinline></video>
+    <div class="hero__overlay"></div>
+    <div class="hero-inner">
+      <p class="eyebrow eyebrow--light">For food service companies</p>
+      <h1>The Next Generation of Professional Whipping Cream.</h1>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn btn--primary">Request Information</a>
+        <a href="/applications/" class="btn btn--ghost">View Recipes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section" hidden>
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-copy">
+          <h2>Built for Performance</h2>
+        </div>
+        <div class="story-copy">
+          <p>Powered by plant protein and innovation, Andfoods Whip delivers consistent whipping performance and versatility in real kitchen environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story (centered) -->
+  <section class="section">
+    <div class="container">
+      <div class="story-centered">
+        <h2>Built for Performance</h2>
+        <p>Powered by plant protein and innovation, Andfoods Whip delivers consistent whipping performance and versatility in real kitchen environments.</p>
+        <ul class="pill-list">
+          <li class="pill pill--white">Stable whipping performance</li>
+          <li class="pill pill--pink">Smooth, light mouthfeel</li>
+          <li class="pill pill--purple">Bright white appearance for presentation</li>
+          <li class="pill pill--cream">Palm oil free and hydrogenated oil free</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll-sync feature: sticky crossfading images ↔ scrolling text -->
+  <section class="section">
+    <div class="container">
+      <div class="scroll-feature">
+        <div class="scroll-feature__media">
+          <img class="scroll-feature__image" data-scroll-image="0" src="assets/andfoods-original/concept-barista.webp" alt="Andfoods whipped drink concept for food service beverages">
+          <img class="scroll-feature__image" data-scroll-image="1" src="assets/andfoods-original/all/JP1_8693-sm.webp" alt="Andfoods bakery concept for QSR and casual dining">
+          <img class="scroll-feature__image" data-scroll-image="2" src="assets/andfoods-original/all/JP1_9480-sm.webp" alt="Andfoods dessert concept for large-scale catering services">
+        </div>
+
+        <div class="scroll-feature__content">
+          <article class="scroll-feature__text" data-scroll-text="0">
+            <p class="eyebrow">One cream. Multiple applications.</p>
+            <h2>Designed for versatility</h2>
+            <p class="scroll-feature__intro">Andfoods Whip works across a wide range of bakery, beverage, and dessert applications, helping kitchens simplify operations while maintaining consistent quality.</p>
+            <img class="scroll-feature__image-mobile" src="assets/andfoods-original/concept-barista.webp" alt="Andfoods whipped drink concept for food service beverages">
+            <h3>Beverage</h3>
+            <div class="scroll-feature__body">
+              <p>A barista-ready cream built for cafe chains, engineered to texture, hold and finish across the full beverage menu, from lattes to specialty drinks.</p>
+              <ul class="feature-card__bullets">
+                <li>Smooth, stable topping for coffee and specialty drinks</li>
+                <li>Holds texture without quickly collapsing</li>
+                <li>Light, creamy mouthfeel that complements beverages</li>
+                <li>Bright white finish for visually appealing drinks</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scroll-feature__text" data-scroll-text="1">
+            <img class="scroll-feature__image-mobile" src="assets/andfoods-original/all/JP1_8693-sm.webp" alt="Andfoods bakery concept for QSR and casual dining">
+            <h3>Bakery</h3>
+            <div class="scroll-feature__body">
+              <p>A kitchen-stable, dairy-free cream built for QSR and casual dining operations, reliable through prep, service and volume without compromising on quality.</p>
+              <ul class="feature-card__bullets">
+                <li>Smooth, stable topping for coffee and specialty drinks</li>
+                <li>Holds texture without quickly collapsing</li>
+                <li>Light, creamy mouthfeel that complements beverages</li>
+                <li>Bright white finish for visually appealing drinks</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scroll-feature__text" data-scroll-text="2">
+            <img class="scroll-feature__image-mobile" src="assets/andfoods-original/all/JP1_9480-sm.webp" alt="Andfoods dessert concept for large-scale catering services">
+            <h3>Dessert</h3>
+            <div class="scroll-feature__body">
+              <p>A versatile dessert base built for contract caterers, smooth, consistent and reliable across plated, layered and chilled applications at scale.</p>
+              <ul class="feature-card__bullets">
+                <li>Smooth texture ideal for mousse and layered desserts</li>
+                <li>Stable structure for plated and chilled desserts</li>
+                <li>Light, creamy mouthfeel without heaviness</li>
+                <li>Bright white appearance for elegant presentation</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications horizontal scroller -->
+  <section class="section applications-section">
+    <div class="container">
+      <h2 class="applications-heading">Applications</h2>
+    </div>
+    <div class="recipe-scroller">
+      <div class="recipe-scroller__track recipe-scroller__track--marquee">
+        <a class="recipe-card" data-category="bakery" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_8693-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Bakery</p>
+          <h4 class="recipe-card__title">Vanilla Chantilly Scones</h4>
+        </a>
+        <a class="recipe-card" data-category="beverage" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/concept-barista.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Beverage</p>
+          <h4 class="recipe-card__title">Signature Flat White</h4>
+        </a>
+        <a class="recipe-card" data-category="dessert" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/65ef7ee7544d7fb08c97dbe3_JP1_1877-p-2000-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Dessert</p>
+          <h4 class="recipe-card__title">Plant-Based Chocolate Éclairs</h4>
+        </a>
+        <a class="recipe-card" data-category="bakery" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_8721-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Bakery</p>
+          <h4 class="recipe-card__title">Black Forest Layer Cake</h4>
+        </a>
+        <a class="recipe-card" data-category="beverage" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_9335-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Beverage</p>
+          <h4 class="recipe-card__title">Iced Caramel Oat Latte</h4>
+        </a>
+        <a class="recipe-card" data-category="dessert" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/65f20c63dc24fe85d4a05c63_JP1_1112-p-2000-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Dessert</p>
+          <h4 class="recipe-card__title">Raspberry Panna Cotta</h4>
+        </a>
+        <a class="recipe-card" data-category="bakery" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_8737-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Bakery</p>
+          <h4 class="recipe-card__title">Cardamom Cream Buns</h4>
+        </a>
+        <a class="recipe-card" data-category="dessert" href="/recipe/">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_9480-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Dessert</p>
+          <h4 class="recipe-card__title">Mango Chantilly Trifle</h4>
+        </a>
+        <!-- duplicate set for seamless loop -->
+        <a class="recipe-card" data-category="bakery" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_8693-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Bakery</p>
+          <h4 class="recipe-card__title">Vanilla Chantilly Scones</h4>
+        </a>
+        <a class="recipe-card" data-category="beverage" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/concept-barista.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Beverage</p>
+          <h4 class="recipe-card__title">Signature Flat White</h4>
+        </a>
+        <a class="recipe-card" data-category="dessert" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/65ef7ee7544d7fb08c97dbe3_JP1_1877-p-2000-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Dessert</p>
+          <h4 class="recipe-card__title">Plant-Based Chocolate Éclairs</h4>
+        </a>
+        <a class="recipe-card" data-category="bakery" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_8721-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Bakery</p>
+          <h4 class="recipe-card__title">Black Forest Layer Cake</h4>
+        </a>
+        <a class="recipe-card" data-category="beverage" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_9335-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Beverage</p>
+          <h4 class="recipe-card__title">Iced Caramel Oat Latte</h4>
+        </a>
+        <a class="recipe-card" data-category="dessert" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/65f20c63dc24fe85d4a05c63_JP1_1112-p-2000-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Dessert</p>
+          <h4 class="recipe-card__title">Raspberry Panna Cotta</h4>
+        </a>
+        <a class="recipe-card" data-category="bakery" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_8737-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Bakery</p>
+          <h4 class="recipe-card__title">Cardamom Cream Buns</h4>
+        </a>
+        <a class="recipe-card" data-category="dessert" href="/recipe/" aria-hidden="true" tabindex="-1">
+          <span class="recipe-card__media"><img src="assets/andfoods-original/all/JP1_9480-sm.webp" alt="" loading="eager" decoding="async"></span>
+          <p class="eyebrow">Dessert</p>
+          <h4 class="recipe-card__title">Mango Chantilly Trifle</h4>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three-column feature -->
+  <section class="section">
+    <div class="container">
+      <div class="content-card content-card--pink">
+        <div class="section-head section-head--left-half">
+          <p class="eyebrow">Food service focus</p>
+          <h2>Built for channels that need speed, consistency and margin</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3 class="feature-card__title">Multi-Site Foodservice Operators</h3>
+            <p class="feature-card__text">Maintain consistent quality across every location with products designed for reliable, repeatable results.</p>
+          </article>
+          <article class="feature-card">
+            <h3 class="feature-card__title">Distributors &amp; Channel Partners</h3>
+            <p class="feature-card__text">Build differentiated product ranges that compete on performance, versatility, and commercial value.</p>
+          </article>
+          <article class="feature-card">
+            <h3 class="feature-card__title">Central Kitchens &amp; Production Facilities</h3>
+            <p class="feature-card__text">Enable efficient large-batch production with ingredients designed for consistency and process reliability.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- CTA banner -->
+  <section class="cta-banner">
+    <div class="cta-banner__text">
+      <p class="eyebrow eyebrow--light">Ready to explore high-performance cream?</p>
+      <h2>Talk with Andfoods about your next food service launch.</h2>
+    </div>
+    <div class="cta-banner__actions">
+      <a href="/contact/" class="btn btn--primary">Contact sales</a>
+      <a href="/applications/" class="btn btn--ghost">Explore concepts</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>© Andfoods</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/about-us/">About Us</a>
+        <a href="/our-plants/">Our Plants</a>
+        <a href="/applications/">Applications</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="nav.js" defer></script>
+</body>
 </html>
