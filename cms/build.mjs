@@ -21,6 +21,11 @@ const esc = (s) => String(s)
 
 // Shared header/mobile-menu/cta-banner/footer fragments — kept here so every
 // generated recipe page stays in sync with the rest of the site.
+const loaderHtml = `<div class="page-loader" aria-hidden="true">
+    <div class="page-loader__ring"></div>
+    <div class="page-loader__mark"><img src="/assets/andfoods-original/logo.svg" alt=""></div>
+  </div>`;
+
 const headerHtml = `<header class="site-header">
     <div class="site-header__inner">
       <a href="/" aria-label="Andfoods home">
@@ -113,6 +118,8 @@ function renderRecipePage(r) {
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+
+  ${loaderHtml}
 
   ${headerHtml}
 

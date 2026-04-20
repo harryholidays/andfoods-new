@@ -72,6 +72,51 @@
     });
   }
 
+  // Page loader: fade out once the page is fully ready.
+  const loader = document.querySelector('.page-loader');
+  const dismissLoader = () => {
+    if (!loader) return;
+    loader.classList.add('page-loader--hidden');
+    setTimeout(() => loader.remove(), 700);
+  };
+  if (loader) {
+    if (document.readyState === 'complete') {
+      requestAnimationFrame(() => setTimeout(dismissLoader, 120));
+    } else {
+      window.addEventListener('load', () => setTimeout(dismissLoader, 120));
+    }
+    // Safety net — never trap the page behind the loader.
+    setTimeout(dismissLoader, 3500);
+  }
+
+  // Reveal-on-scroll: elegant fade + rise for every major block.
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealTargets = document.querySelectorAll(
+    'main > section, main > section > .container > *, .sub-hero__content, .cta-banner > *, .recipe-card, .recipe-grid > *, .applications-marquee, .story-grid > *'
+  );
+  revealTargets.forEach((el) => el.classList.add('reveal'));
+  if (prefersReduced) {
+    revealTargets.forEach((el) => el.classList.add('reveal--in'));
+  } else if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal--in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    revealTargets.forEach((el) => io.observe(el));
+    // Staggered delay for sibling groups (cards, grid items).
+    document.querySelectorAll('.recipe-grid, .story-grid, .cta-banner').forEach((group) => {
+      Array.from(group.children).forEach((child, i) => {
+        child.style.transitionDelay = `${Math.min(i * 60, 360)}ms`;
+      });
+    });
+  } else {
+    revealTargets.forEach((el) => el.classList.add('reveal--in'));
+  }
+
   // Mark the current nav link as active.
   const path = window.location.pathname.replace(/\/$/, '') || '/';
   document.querySelectorAll('[data-route]').forEach((el) => {
