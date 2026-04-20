@@ -5,11 +5,25 @@
       "name": "Vanilla Cold Foam Iced Coffee",
       "category": "drinks",
       "categoryLabel": "Drinks",
-      "image": "/assets/andfoods-original/recipes/drinks-1-vanilla-cold-foam.webp",
+      "image": "/assets/andfoods-original/recipes/vanilla-cold-foam-iced-coffee.webp",
       "lede": "Smooth cold brew topped with a light, velvety cold foam.",
       "ingredients": [
-        { "heading": "Base", "items": ["150 ml cold brew coffee", "10 ml vanilla syrup", "Ice"] },
-        { "heading": "Cold Foam", "items": ["60 ml ANDWHIP", "20 ml milk of choice", "10 ml vanilla syrup"] }
+        {
+          "heading": "Base",
+          "items": [
+            "150 ml cold brew coffee",
+            "10 ml vanilla syrup",
+            "Ice"
+          ]
+        },
+        {
+          "heading": "Cold Foam",
+          "items": [
+            "60 ml ANDWHIP",
+            "20 ml milk of choice",
+            "10 ml vanilla syrup"
+          ]
+        }
       ],
       "method": [
         "Fill a cup with ice and add cold brew and syrup.",
@@ -24,12 +38,32 @@
       "name": "Hot Vienna Coffee with Cold Foam",
       "category": "drinks",
       "categoryLabel": "Drinks",
-      "image": "/assets/andfoods-original/recipes/drinks-2-hot-vienna.webp",
+      "image": "/assets/andfoods-original/recipes/hot-vienna-coffee.webp",
       "lede": "A rich hot chocolate coffee finished with a light, velvety cold foam.",
       "ingredients": [
-        { "heading": "Base", "items": ["150 ml milk of choice (60 to 65 °C)", "25 to 30 ml chocolate syrup (optional)", "1 shot espresso", "5 ml sugar syrup (optional)"] },
-        { "heading": "Cold Foam", "items": ["60 ml ANDFOODS cream", "20 ml milk of choice", "10 ml syrup (optional)"] },
-        { "heading": "Garnish", "items": ["Cocoa powder or chocolate shavings"] }
+        {
+          "heading": "Base",
+          "items": [
+            "150 ml milk of choice (60 to 65 °C)",
+            "25 to 30 ml chocolate syrup (optional)",
+            "1 shot espresso",
+            "5 ml sugar syrup (optional)"
+          ]
+        },
+        {
+          "heading": "Cold Foam",
+          "items": [
+            "60 ml ANDFOODS cream",
+            "20 ml milk of choice",
+            "10 ml syrup (optional)"
+          ]
+        },
+        {
+          "heading": "Garnish",
+          "items": [
+            "Cocoa powder or chocolate shavings"
+          ]
+        }
       ],
       "method": [
         "Heat milk to 60 to 65 °C.",
@@ -47,11 +81,28 @@
       "name": "Matcha Milk Cap Latte",
       "category": "drinks",
       "categoryLabel": "Drinks",
-      "image": "/assets/andfoods-original/recipes/drinks-3-matcha.webp",
+      "image": "/assets/andfoods-original/recipes/matcha-milk-cap-latte.webp",
       "lede": "A vibrant iced matcha finished with a smooth, lightly salted milk cap.",
       "ingredients": [
-        { "heading": "Base", "items": ["2 g matcha powder", "30 ml hot water", "120 ml milk of choice", "5 to 10 ml syrup (optional)", "Ice"] },
-        { "heading": "Milk Cap", "items": ["50 ml ANDWHIP", "20 ml milk or water", "Pinch of salt", "5 ml syrup"] }
+        {
+          "heading": "Base",
+          "items": [
+            "2 g matcha powder",
+            "30 ml hot water",
+            "120 ml milk of choice",
+            "5 to 10 ml syrup (optional)",
+            "Ice"
+          ]
+        },
+        {
+          "heading": "Milk Cap",
+          "items": [
+            "50 ml ANDWHIP",
+            "20 ml milk or water",
+            "Pinch of salt",
+            "5 ml syrup"
+          ]
+        }
       ],
       "method": [
         "Whisk matcha with hot water until smooth.",
@@ -66,12 +117,28 @@
       "name": "Snowcap Strawberries & Cream",
       "category": "drinks",
       "categoryLabel": "Drinks",
-      "image": "/assets/andfoods-original/recipes/drinks-4-snowcap.webp",
+      "image": "/assets/andfoods-original/recipes/snowcap-strawberries-cream.webp",
       "lede": "Fresh strawberry and milk layered with a smooth, aerated snow-cap cream topping.",
       "ingredients": [
-        { "heading": "Base", "items": ["120 ml milk of choice", "Ice"] },
-        { "heading": "Strawberry Layer", "items": ["Fresh strawberry purée, lightly sweetened"] },
-        { "heading": "Cream Topping (Canister Option)", "items": ["ANDWHIP (chilled to 2 to 4 °C)"] }
+        {
+          "heading": "Base",
+          "items": [
+            "120 ml milk of choice",
+            "Ice"
+          ]
+        },
+        {
+          "heading": "Strawberry Layer",
+          "items": [
+            "Fresh strawberry purée, lightly sweetened"
+          ]
+        },
+        {
+          "heading": "Cream Topping (Canister Option)",
+          "items": [
+            "ANDWHIP (chilled to 2 to 4 °C)"
+          ]
+        }
       ],
       "method": [
         "Drizzle strawberry purée along the inside of the cup.",
@@ -87,12 +154,31 @@
       "name": "Caramel Nut Frappe",
       "category": "drinks",
       "categoryLabel": "Drinks",
-      "image": "/assets/andfoods-original/recipes/drinks-5-caramel-frappe.webp",
+      "image": "/assets/andfoods-original/recipes/caramel-nut-frappe.webp",
       "lede": "Smooth caramel milk with a light, aerated cream topping and nutty crunch.",
       "ingredients": [
-        { "heading": "Base", "items": ["150 ml milk of choice", "20 ml caramel syrup", "Ice"] },
-        { "heading": "Cream Topping (Canister Option)", "items": ["ANDWHIP (chilled to 2 to 4 °C)", "10 ml caramel syrup (optional, for flavour)"] },
-        { "heading": "Garnish", "items": ["Crushed roasted nuts", "Caramel drizzle"] }
+        {
+          "heading": "Base",
+          "items": [
+            "150 ml milk of choice",
+            "20 ml caramel syrup",
+            "Ice"
+          ]
+        },
+        {
+          "heading": "Cream Topping (Canister Option)",
+          "items": [
+            "ANDWHIP (chilled to 2 to 4 °C)",
+            "10 ml caramel syrup (optional, for flavour)"
+          ]
+        },
+        {
+          "heading": "Garnish",
+          "items": [
+            "Crushed roasted nuts",
+            "Caramel drizzle"
+          ]
+        }
       ],
       "method": [
         "Combine milk and caramel syrup, then pour over ice.",
@@ -107,10 +193,17 @@
       "name": "Vanilla Cream Cake Icing",
       "category": "dessert",
       "categoryLabel": "Dessert",
-      "image": "/assets/andfoods-original/recipes/desserts-cake.webp",
+      "image": "/assets/andfoods-original/recipes/vanilla-cream-cake-icing.webp",
       "lede": "Classic vanilla whipped cream, light and smooth for cake icing.",
       "ingredients": [
-        { "heading": null, "items": ["400 g AndFoods Whip", "12 g sugar", "5 g vanilla pod"] }
+        {
+          "heading": null,
+          "items": [
+            "400 g AndFoods Whip",
+            "12 g sugar",
+            "5 g vanilla pod"
+          ]
+        }
       ],
       "method": [
         "Infuse cream: Split 5 g vanilla pod and scrape seeds into 400 g AndFoods Whip. Add 12 g sugar and combine.",
@@ -124,10 +217,20 @@
       "name": "Bergamot Orange Mousse",
       "category": "dessert",
       "categoryLabel": "Dessert",
-      "image": "/assets/andfoods-original/recipes/desserts-cheesecake.webp",
+      "image": "/assets/andfoods-original/recipes/bergamot-orange-mousse.webp",
       "lede": "Delicate citrus mousse with floral bergamot notes, light and airy with a set finish.",
       "ingredients": [
-        { "heading": null, "items": ["600 g plant-based milk", "200 g bergamot fruit puree", "240 g sugar", "67.5 g gelatin", "375 g yolk", "2100 g AndFoods Whip"] }
+        {
+          "heading": null,
+          "items": [
+            "600 g plant-based milk",
+            "200 g bergamot fruit puree",
+            "240 g sugar",
+            "67.5 g gelatin",
+            "375 g yolk",
+            "2100 g AndFoods Whip"
+          ]
+        }
       ],
       "method": [
         "Bloom gelatin: Bloom 67.5 g gelatin in cold water until softened.",
@@ -149,7 +252,20 @@
       "image": "/assets/andfoods-original/recipes/desserts-cheesecake.webp",
       "lede": "Silky baked lime cheesecake, water-bath baked at low temperature, chilled and set in the freezer.",
       "ingredients": [
-        { "heading": null, "items": ["50 g lime juice", "10 g corn starch", "65 g sugar", "65 g plant-based butter, melted", "4 whole eggs", "210 g plant-based cream cheese", "50 g plant-based milk", "50 g plant-based yogurt", "115 g AndFoods Whip"] }
+        {
+          "heading": null,
+          "items": [
+            "50 g lime juice",
+            "10 g corn starch",
+            "65 g sugar",
+            "65 g plant-based butter, melted",
+            "4 whole eggs",
+            "210 g plant-based cream cheese",
+            "50 g plant-based milk",
+            "50 g plant-based yogurt",
+            "115 g AndFoods Whip"
+          ]
+        }
       ],
       "method": [
         "Make lime mixture: Combine 50 g lime juice, 10 g corn starch, 65 g sugar, 65 g butter (melted), and 4 whole eggs and mix until smooth. Set aside.",
@@ -168,7 +284,17 @@
       "image": "/assets/andfoods-original/recipes/desserts-cheesecake.webp",
       "lede": "Silky bergamot white chocolate ganache, smooth, glossy, and set with gelatin.",
       "ingredients": [
-        { "heading": null, "items": ["80 g bergamot fruit puree", "220 g AndFoods Whip", "8 g glucose", "8 g inverted sugar", "5 g gelatin", "140 g white chocolate"] }
+        {
+          "heading": null,
+          "items": [
+            "80 g bergamot fruit puree",
+            "220 g AndFoods Whip",
+            "8 g glucose",
+            "8 g inverted sugar",
+            "5 g gelatin",
+            "140 g white chocolate"
+          ]
+        }
       ],
       "method": [
         "Bloom gelatin: Bloom 5 g gelatin in cold water until softened.",
@@ -187,7 +313,17 @@
       "image": "/assets/andfoods-original/recipes/desserts-cheesecake.webp",
       "lede": "Glossy caramel mirror glaze, smooth, pourable, and perfectly reflective.",
       "ingredients": [
-        { "heading": null, "items": ["375 g sugar", "300 g water", "300 g AndFoods Whip", "50 g water", "25 g corn starch", "15 g gelatin"] }
+        {
+          "heading": null,
+          "items": [
+            "375 g sugar",
+            "300 g water",
+            "300 g AndFoods Whip",
+            "50 g water",
+            "25 g corn starch",
+            "15 g gelatin"
+          ]
+        }
       ],
       "method": [
         "Bloom gelatin: Bloom 15 g gelatin in cold water until softened.",
@@ -207,7 +343,14 @@
       "image": "/assets/andfoods-original/recipes/desserts-cheesecake.webp",
       "lede": "Bright lemon decoration gel, glossy and set, for glazing or decorative inserts.",
       "ingredients": [
-        { "heading": null, "items": ["150 g lemon juice", "8 g NH pectin powder", "5 g gelatin"] }
+        {
+          "heading": null,
+          "items": [
+            "150 g lemon juice",
+            "8 g NH pectin powder",
+            "5 g gelatin"
+          ]
+        }
       ],
       "method": [
         "Bloom gelatin: Bloom 5 g gelatin in cold water until softened.",
@@ -222,10 +365,20 @@
       "name": "Custard Filling for Cream Puffs",
       "category": "dessert",
       "categoryLabel": "Dessert",
-      "image": "/assets/andfoods-original/recipes/desserts-profiterole.webp",
+      "image": "/assets/andfoods-original/recipes/custard-filling.webp",
       "lede": "Large-batch pastry cream using AndFoods Whip, a rich, pipeable custard for cream puff filling.",
       "ingredients": [
-        { "heading": null, "items": ["800 g egg pulp", "3500 g AndFoods Whip", "40 g vanilla sauce", "200 g corn starch", "800 g sugar", "500 g plant-based butter"] }
+        {
+          "heading": null,
+          "items": [
+            "800 g egg pulp",
+            "3500 g AndFoods Whip",
+            "40 g vanilla sauce",
+            "200 g corn starch",
+            "800 g sugar",
+            "500 g plant-based butter"
+          ]
+        }
       ],
       "method": [
         "Heat cream base: Heat 3500 g AndFoods Whip, 800 g sugar, and 40 g vanilla sauce over medium until the mixture reaches 70 °C and sugar dissolves.",
@@ -242,10 +395,16 @@
       "name": "Crème Diplomat",
       "category": "dessert",
       "categoryLabel": "Dessert",
-      "image": "/assets/andfoods-original/recipes/desserts-profiterole.webp",
+      "image": "/assets/andfoods-original/recipes/creme-diplomat.webp",
       "lede": "Lightened custard cream, whipped and folded for a delicate, pipeable filling.",
       "ingredients": [
-        { "heading": null, "items": ["1000 g custard sauce", "1000 g AndFoods Whip"] }
+        {
+          "heading": null,
+          "items": [
+            "1000 g custard sauce",
+            "1000 g AndFoods Whip"
+          ]
+        }
       ],
       "method": [
         "Whip cream: Whip 1000 g AndFoods Whip to stiff peaks.",
@@ -260,10 +419,18 @@
       "name": "Chocolate Ganache Filling",
       "category": "dessert",
       "categoryLabel": "Dessert",
-      "image": "/assets/andfoods-original/recipes/desserts-ganache.webp",
+      "image": "/assets/andfoods-original/recipes/chocolate-ganache-filling.webp",
       "lede": "Rich chocolate ganache filling, smooth, glossy, and pipeable.",
       "ingredients": [
-        { "heading": null, "items": ["30 g cocoa powder", "50 g milk", "250 g AndFoods Whip", "25 g chocolate"] }
+        {
+          "heading": null,
+          "items": [
+            "30 g cocoa powder",
+            "50 g milk",
+            "250 g AndFoods Whip",
+            "25 g chocolate"
+          ]
+        }
       ],
       "method": [
         "Heat cream base: Heat 250 g AndFoods Whip, 50 g milk, and 30 g cocoa powder together, whisking until smooth and just simmering.",
@@ -277,10 +444,17 @@
       "name": "Pistachio Cream Filling",
       "category": "dessert",
       "categoryLabel": "Dessert",
-      "image": "/assets/andfoods-original/recipes/desserts-profiterole.webp",
+      "image": "/assets/andfoods-original/recipes/pistachio-cream-filling.webp",
       "lede": "Light pistachio cream, nutty, sweet, and pipeable.",
       "ingredients": [
-        { "heading": null, "items": ["30 g pistachio paste", "100 g AndFoods Whip", "10 g sugar"] }
+        {
+          "heading": null,
+          "items": [
+            "30 g pistachio paste",
+            "100 g AndFoods Whip",
+            "10 g sugar"
+          ]
+        }
       ],
       "method": [
         "Whip cream: Whip 100 g AndFoods Whip and 10 g sugar together to stiff peaks.",
