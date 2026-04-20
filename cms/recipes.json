@@ -335,11 +335,11 @@
     },
     {
       "slug": "chocolate-cream-profiterole",
-      "name": "Chocolate Cream Profiterole",
+      "name": "Cream Profiterole",
       "category": "dessert",
       "categoryLabel": "Dessert",
       "image": "/assets/andfoods-original/recipes/custard-filling.webp",
-      "lede": "Choux-style profiteroles with layered cream fillings: custard, crème diplomat, chocolate ganache, and pistachio.",
+      "lede": "Choux-style profiteroles with layered cream fillings: custard, crème diplomat, and pistachio.",
       "ingredients": [
         {
           "heading": "Custard Filling",
@@ -357,15 +357,6 @@
           "items": [
             "1000 g custard sauce",
             "1000 g AndFoods Whip"
-          ]
-        },
-        {
-          "heading": "Chocolate Ganache Filling",
-          "items": [
-            "30 g cocoa powder",
-            "50 g milk",
-            "250 g AndFoods Whip",
-            "25 g chocolate"
           ]
         },
         {
@@ -399,14 +390,6 @@
           ]
         },
         {
-          "heading": "Chocolate Ganache Filling",
-          "steps": [
-            "Heat cream base: Heat 250 g AndFoods Whip, 50 g milk, and 30 g cocoa powder together, whisking until smooth and just simmering.",
-            "Melt chocolate: Pour hot cream over 25 g chocolate. Let sit 1 minute, then stir until fully melted and glossy.",
-            "Cool and set: Cool to room temperature, then refrigerate until set and pipeable."
-          ]
-        },
-        {
           "heading": "Pistachio Cream Filling",
           "steps": [
             "Whip cream: Whip 100 g AndFoods Whip and 10 g sugar together to stiff peaks.",
@@ -416,6 +399,31 @@
         }
       ],
       "notes": "Strain custard for smoothness. Fold whipped cream gently into the diplomat to keep it light. Pipe each filling chilled."
+    },
+    {
+      "slug": "chocolate-ganache-filling",
+      "name": "Chocolate Ganache Filling",
+      "category": "dessert",
+      "categoryLabel": "Dessert",
+      "image": "/assets/andfoods-original/recipes/chocolate-ganache-filling.webp",
+      "lede": "Rich chocolate ganache filling, smooth, glossy, and pipeable.",
+      "ingredients": [
+        {
+          "heading": null,
+          "items": [
+            "30 g cocoa powder",
+            "50 g milk",
+            "250 g AndFoods Whip",
+            "25 g chocolate"
+          ]
+        }
+      ],
+      "method": [
+        "Heat cream base: Heat 250 g AndFoods Whip, 50 g milk, and 30 g cocoa powder together, whisking until smooth and just simmering.",
+        "Melt chocolate: Pour hot cream over 25 g chocolate. Let sit 1 minute, then stir until fully melted and glossy.",
+        "Cool and set: Cool to room temperature, then refrigerate until set and pipeable."
+      ],
+      "notes": "Ensure the ganache is fully cooled before piping. Use an immersion blender for a smoother finish if needed."
     }
   ]
 }
