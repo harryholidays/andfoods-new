@@ -1232,3 +1232,15 @@ body.our-plants .feature-card__bullets li::before { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* Page transition: fade out before navigating */
+body {
+  transition: opacity .4s ease;
+}
+body.page-leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  body, body.page-leaving { transition: none; opacity: 1; }
+}

@@ -117,6 +117,32 @@
     revealTargets.forEach((el) => el.classList.add('reveal--in'));
   }
 
+  // Page transition: fade the page out before navigating to another
+  // internal URL, then let the next page's loader fade back in.
+  if (!prefersReduced) {
+    document.addEventListener('click', (e) => {
+      if (e.defaultPrevented) return;
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = e.target.closest('a');
+      if (!a) return;
+      const href = a.getAttribute('href');
+      if (!href || a.target === '_blank' || a.hasAttribute('download')) return;
+      // Ignore hash, mailto/tel, and cross-origin links.
+      if (/^(mailto:|tel:|javascript:|#)/i.test(href)) return;
+      let url;
+      try { url = new URL(a.href, window.location.href); } catch { return; }
+      if (url.origin !== window.location.origin) return;
+      if (url.pathname === window.location.pathname && url.search === window.location.search) return;
+      e.preventDefault();
+      document.body.classList.add('page-leaving');
+      setTimeout(() => { window.location.href = a.href; }, 420);
+    });
+    // If the user comes back via bfcache, clear the leaving state.
+    window.addEventListener('pageshow', (e) => {
+      if (e.persisted) document.body.classList.remove('page-leaving');
+    });
+  }
+
   // Mark the current nav link as active.
   const path = window.location.pathname.replace(/\/$/, '') || '/';
   document.querySelectorAll('[data-route]').forEach((el) => {
