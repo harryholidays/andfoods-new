@@ -151,23 +151,30 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .site-nav__link--active { color: var(--brand); }
 
 .site-header--scrolled {
-  top: 10px;
-  padding-top: 0;
+  top: 0;
+  padding-top: 10px;
   padding-bottom: 15px;
-  border-radius: var(--radius-pill);
+  background: transparent;
 }
+.site-header--scrolled::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -24px 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+.site-header--scrolled .site-header__inner { position: relative; z-index: 1; }
 .site-header--scrolled .brand-logo { height: 60px; }
 body:not(.home) .brand-logo { height: 60px; }
 
 /* Home page: white nav + logo over the hero; revert when scrolled */
-body.home .site-header:not(.site-header--scrolled) .site-nav__link,
-body.home .site-header:not(.site-header--scrolled) .menu-toggle span,
-body.home .site-header:not(.site-header--scrolled) .menu-toggle span::before,
-body.home .site-header:not(.site-header--scrolled) .menu-toggle span::after {
-  color: #fff;
-  background: #fff;
-}
 body.home .site-header:not(.site-header--scrolled) .site-nav__link {
+  color: #fff;
   background: transparent;
 }
 body.home .site-header:not(.site-header--scrolled) .brand-logo {
@@ -805,8 +812,9 @@ body.home .site-header:not(.site-header--scrolled) {
   color: var(--brand);
 }
 
-/* Home page: pill-style bullets instead of dots */
-body.home .feature-card__bullets {
+/* Pill-style bullets (home + our-plants) */
+body.home .feature-card__bullets,
+body.our-plants .feature-card__bullets {
   list-style: none;
   padding: 0;
   margin-top: 1rem;
@@ -816,7 +824,13 @@ body.home .feature-card__bullets {
   color: inherit;
   font-size: inherit;
 }
-body.home .feature-card__bullets li {
+body.our-plants .feature-card__bullets {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+body.home .feature-card__bullets li,
+body.our-plants .feature-card__bullets li {
   padding: .5rem 1rem;
   background: var(--surface-soft);
   color: var(--brand-dark);
@@ -825,7 +839,8 @@ body.home .feature-card__bullets li {
   line-height: 1.3;
   margin: 0;
 }
-body.home .feature-card__bullets li::before { display: none; }
+body.home .feature-card__bullets li::before,
+body.our-plants .feature-card__bullets li::before { display: none; }
 
 /* ---------- Feature grid (3-col, stacks on mobile) ---------- */
 .feature-grid {
