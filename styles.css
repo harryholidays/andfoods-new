@@ -160,7 +160,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   content: "";
   position: absolute;
   inset: 0 0 -24px 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
