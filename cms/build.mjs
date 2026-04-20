@@ -80,8 +80,19 @@ function renderIngredients(groups) {
   }).join('\n');
 }
 
-function renderMethod(steps) {
-  return steps.map((s) => `<li>${esc(s)}</li>`).join('');
+function renderMethod(method) {
+  // Supports either a flat array of step strings, or an array of
+  // { heading, steps } groups for composed recipes.
+  if (method.length && typeof method[0] === 'object') {
+    return method.map((g) => {
+      const heading = g.heading
+        ? `<h4 style="margin-top:1.25rem;font-size:.95rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);">${esc(g.heading)}</h4>`
+        : '';
+      const items = g.steps.map((s) => `<li>${esc(s)}</li>`).join('');
+      return `${heading}<ol style="margin-top:.5rem;color:var(--muted);line-height:1.8;padding-left:1.2rem;">${items}</ol>`;
+    }).join('\n');
+  }
+  return `<ol style="margin-top:.5rem;color:var(--muted);line-height:1.8;padding-left:1.2rem;">${method.map((s) => `<li>${esc(s)}</li>`).join('')}</ol>`;
 }
 
 function renderRecipePage(r) {
@@ -125,9 +136,7 @@ function renderRecipePage(r) {
             ${renderIngredients(r.ingredients)}
 
             <h3 style="margin-top:2rem;font-size:2rem;">Method</h3>
-            <ol style="margin-top:.5rem;color:var(--muted);line-height:1.8;padding-left:1.2rem;">
-              ${renderMethod(r.method)}
-            </ol>
+            ${renderMethod(r.method)}
 
             ${notesHtml}
 
