@@ -121,10 +121,10 @@ function renderRecipePage(r) {
             <img src="${esc(r.image)}" alt="${esc(r.name)}">
           </div>
           <div class="story-copy recipe-copy">
-            <h3 style="margin-top:2rem;font-size:1.1rem;">Ingredients</h3>
+            <h3 style="margin-top:2rem;font-size:2rem;">Ingredients</h3>
             ${renderIngredients(r.ingredients)}
 
-            <h3 style="margin-top:2rem;font-size:1.1rem;">Method</h3>
+            <h3 style="margin-top:2rem;font-size:2rem;">Method</h3>
             <ol style="margin-top:.5rem;color:var(--muted);line-height:1.8;padding-left:1.2rem;">
               ${renderMethod(r.method)}
             </ol>
