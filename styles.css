@@ -1176,7 +1176,7 @@ body.our-plants .feature-card__bullets li::before { display: none; }
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: var(--brand, #f4ede4);
+  background: #ffffff;
   display: grid;
   place-items: center;
   opacity: 1;
