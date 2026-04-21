@@ -681,7 +681,19 @@ body.home .site-header:not(.site-header--scrolled) {
   to   { transform: translateX(calc(-50% - .75rem)); }
 }
 @media (max-width: 720px) {
-  .recipe-scroller__track--marquee { animation-duration: 220s; }
+  /* Swap marquee for native swipe on mobile */
+  .recipe-scroller:has(.recipe-scroller__track--marquee) {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .recipe-scroller__track--marquee {
+    animation: none;
+    width: max-content;
+    transform: none;
+  }
+  .recipe-scroller__track--marquee .recipe-card[aria-hidden="true"] { display: none; }
+  .recipe-scroller__track--marquee .recipe-card { scroll-snap-align: start; }
 }
 @media (prefers-reduced-motion: reduce) {
   .recipe-scroller__track--marquee { animation: none; }
