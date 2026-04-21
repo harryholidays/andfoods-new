@@ -91,9 +91,9 @@
 
   // Reveal-on-scroll: elegant fade + rise for every major block.
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const revealTargets = document.querySelectorAll(
-    'main > section, main > section > .container > *, .sub-hero__content, .cta-banner > *, .recipe-card, .recipe-grid > *, .applications-marquee, .story-grid > *'
-  );
+  const revealTargets = Array.from(document.querySelectorAll(
+    'main > section, main > section > .container > *, .sub-hero__content, .cta-banner > *, .recipe-card, .recipe-grid > *, .story-grid > *'
+  )).filter((el) => !el.closest('.applications-section'));
   revealTargets.forEach((el) => el.classList.add('reveal'));
   if (prefersReduced) {
     revealTargets.forEach((el) => el.classList.add('reveal--in'));
