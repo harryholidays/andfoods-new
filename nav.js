@@ -143,6 +143,12 @@
     });
   }
 
+  // Contact form success banner (Netlify redirects back with ?success=1).
+  if (/[?&]success=1/.test(window.location.search)) {
+    const banner = document.querySelector('.contact-form__success');
+    if (banner) banner.hidden = false;
+  }
+
   // Mark the current nav link as active.
   const path = window.location.pathname.replace(/\/$/, '') || '/';
   document.querySelectorAll('[data-route]').forEach((el) => {
