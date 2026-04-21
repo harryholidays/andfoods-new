@@ -681,7 +681,7 @@ body.home .site-header:not(.site-header--scrolled) {
   to   { transform: translateX(calc(-50% - .75rem)); }
 }
 @media (max-width: 720px) {
-  .recipe-scroller__track--marquee { animation-duration: 110s; }
+  .recipe-scroller__track--marquee { animation-duration: 220s; }
 }
 @media (prefers-reduced-motion: reduce) {
   .recipe-scroller__track--marquee { animation: none; }
