@@ -1163,6 +1163,15 @@ body.our-plants .feature-card__bullets li::before { display: none; }
   .team-grid { grid-template-columns: 1fr; }
   .section { padding: 3.5rem 0; }
   body.home .site-header:not(.site-header--scrolled) { padding-top: 20px; }
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    white-space: nowrap;
+  }
+  .site-footer__inner > span { white-space: nowrap; }
+  .footer-links { justify-content: flex-start; }
   .story-centered { padding-left: 20px; padding-right: 20px; }
   .story-centered h2 { font-size: calc(4rem - 10px); }
   .story-centered p:not(.eyebrow) { font-size: 1.4rem; }
