@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Thank you | Andfoods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thanks for getting in touch with Andfoods.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preload" href="/fonts/MatterSQTRIAL-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <div class="page-loader" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" aria-label="Andfoods home"><img src="/assets/andfoods-original/logo.svg" alt="Andfoods" class="brand-logo"></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/" class="site-nav__link" data-route="/">Home</a>
+        <a href="/applications/" class="site-nav__link" data-route="/applications">Applications</a>
+        <a href="/our-plants/" class="site-nav__link" data-route="/our-plants">Our Plants</a>
+        <a href="/about-us/" class="site-nav__link" data-route="/about-us">About Us</a>
+        <a href="/contact/" class="site-nav__link" data-route="/contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu"><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-menu" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" aria-label="Close menu">×</button>
+    <a href="/" class="mobile-menu__link" data-route="/">Home</a>
+    <a href="/applications/" class="mobile-menu__link" data-route="/applications">Applications</a>
+    <a href="/our-plants/" class="mobile-menu__link" data-route="/our-plants">Our Plants</a>
+    <a href="/about-us/" class="mobile-menu__link" data-route="/about-us">About Us</a>
+    <a href="/contact/" class="mobile-menu__link" data-route="/contact">Contact</a>
+  </aside>
+
+  <main style="padding-top:var(--header-h);">
+    <section class="section" style="padding-top:8rem;padding-bottom:6rem;text-align:center;">
+      <div class="container" style="max-width:760px;">
+        <p class="eyebrow">Thanks</p>
+        <h1 style="font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.04;letter-spacing:-.03em;margin-top:.6rem;color:var(--brand-dark);">Message received.</h1>
+        <p style="margin-top:1.2rem;color:var(--muted);font-size:1.1rem;line-height:1.6;">We've got your note and our team will be in touch shortly. In the meantime, take a look at our applications or learn a little more about Andfoods.</p>
+        <div style="display:flex;gap:.8rem;justify-content:center;margin-top:2rem;flex-wrap:wrap;">
+          <a href="/applications/" class="btn btn--primary">Explore applications</a>
+          <a href="/" class="btn btn--ghost">Back to home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>© Andfoods</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/about-us/">About Us</a>
+        <a href="/our-plants/">Our Plants</a>
+        <a href="/applications/">Applications</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/nav.js" defer></script>
+</body>
+</html>
