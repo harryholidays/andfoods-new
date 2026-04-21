@@ -680,6 +680,9 @@ body.home .site-header:not(.site-header--scrolled) {
   from { transform: translateX(0); }
   to   { transform: translateX(calc(-50% - .75rem)); }
 }
+@media (max-width: 720px) {
+  .recipe-scroller__track--marquee { animation-duration: 110s; }
+}
 @media (prefers-reduced-motion: reduce) {
   .recipe-scroller__track--marquee { animation: none; }
 }
