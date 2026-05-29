@@ -62,7 +62,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p { margin: 0; font-weight: 400; }
-main { max-width: 1700px; margin: 0 auto; }
+main { max-width: none; margin: 0 auto; }
 b, strong { font-weight: 400; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
