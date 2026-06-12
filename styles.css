@@ -489,6 +489,24 @@ body.home .site-header:not(.site-header--scrolled) {
   gap: 3rem;
   align-items: center;
 }
+.story-centered--left {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+}
+.story-centered--left .pill-list { justify-content: flex-start; }
+.story-split__media {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+div.story-split__media {
+  aspect-ratio: 1 / 1;
+  background: var(--surface-soft);
+}
+img.story-split__media {
+  height: auto;
+  object-fit: contain;
+}
 .story-split__text h2 {
   font-size: clamp(2rem, 3.4vw, 2.95rem);
   line-height: 1.07;
@@ -508,10 +526,11 @@ body.home .site-header:not(.site-header--scrolled) {
 }
 
 .story-centered {
-  width: 50%;
-  margin-inline: auto;
-  text-align: center;
+  width: 100%;
+  margin-inline: 0;
+  text-align: left;
 }
+.story-centered .pill-list { justify-content: flex-start; }
 .story-centered h2 {
   font-size: 5rem;
   line-height: 0.8;
@@ -522,7 +541,7 @@ body.home .site-header:not(.site-header--scrolled) {
   color: var(--muted);
   line-height: 1.1;
   font-size: 1.65rem;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 
 .pill-list {
@@ -681,22 +700,13 @@ body.home .site-header:not(.site-header--scrolled) {
   to   { transform: translateX(calc(-50% - .75rem)); }
 }
 @media (max-width: 720px) {
-  /* Swap marquee for native swipe on mobile */
-  .recipe-scroller:has(.recipe-scroller__track--marquee) {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
+  /* Slow marquee + tighter padding on mobile */
   .recipe-scroller__track--marquee {
-    animation: none;
-    width: max-content;
-    transform: none;
+    animation-duration: 220s;
     padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-right: 0 !important;
   }
   .applications-section .container { padding-left: 20px; padding-right: 20px; }
-  .recipe-scroller__track--marquee .recipe-card[aria-hidden="true"] { display: none; }
-  .recipe-scroller__track--marquee .recipe-card { scroll-snap-align: start; }
 }
 @media (prefers-reduced-motion: reduce) {
   .recipe-scroller__track--marquee { animation: none; }
@@ -832,33 +842,42 @@ body.home .site-header:not(.site-header--scrolled) {
 
 /* Pill-style bullets (home + our-plants) */
 body.home .feature-card__bullets,
-body.our-plants .feature-card__bullets {
+body.our-plants .feature-card__bullets,
+body.how-to-use .feature-card__bullets {
   list-style: none;
   padding: 0;
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 1rem;
   color: inherit;
   font-size: inherit;
 }
-body.our-plants .feature-card__bullets {
+body.our-plants .feature-card__bullets,
+body.how-to-use .feature-card__bullets {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 1.5rem;
 }
+body.how-to-use .feature-card__bullets li {
+  font-size: 1.1rem;
+  background: #C591F5;
+  color: #ffffff;
+}
 body.home .feature-card__bullets li,
-body.our-plants .feature-card__bullets li {
-  padding: .5rem 1rem;
+body.our-plants .feature-card__bullets li,
+body.how-to-use .feature-card__bullets li {
+  padding: 1rem;
   background: var(--surface-soft);
   color: var(--brand-dark);
-  border-radius: 5px;
-  font-size: .9rem;
+  border-radius: 13px;
+  font-size: 1.3rem;
   line-height: 1.3;
   margin: 0;
 }
 body.home .feature-card__bullets li::before,
-body.our-plants .feature-card__bullets li::before { display: none; }
+body.our-plants .feature-card__bullets li::before,
+body.how-to-use .feature-card__bullets li::before { display: none; }
 
 /* ---------- Feature grid (3-col, stacks on mobile) ---------- */
 .feature-grid {

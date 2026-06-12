@@ -31,6 +31,7 @@ const headerHtml = `<header class="site-header">
       <nav class="site-nav" aria-label="Primary">
         <a href="/" class="site-nav__link" data-route="/">Home</a>
         <a href="/applications/" class="site-nav__link" data-route="/applications">Applications</a>
+        <a href="/how-to-use/" class="site-nav__link" data-route="/how-to-use">How to Use</a>
         <a href="/our-plants/" class="site-nav__link" data-route="/our-plants">Our Plants</a>
         <a href="/about-us/" class="site-nav__link" data-route="/about-us">About Us</a>
         <a href="/contact/" class="site-nav__link" data-route="/contact">Contact</a>
@@ -44,6 +45,7 @@ const headerHtml = `<header class="site-header">
     <button class="mobile-menu__close" aria-label="Close menu">\u00d7</button>
     <a href="/" class="mobile-menu__link" data-route="/">Home</a>
     <a href="/applications/" class="mobile-menu__link" data-route="/applications">Applications</a>
+    <a href="/how-to-use/" class="mobile-menu__link" data-route="/how-to-use">How to Use</a>
     <a href="/our-plants/" class="mobile-menu__link" data-route="/our-plants">Our Plants</a>
     <a href="/about-us/" class="mobile-menu__link" data-route="/about-us">About Us</a>
     <a href="/contact/" class="mobile-menu__link" data-route="/contact">Contact</a>
@@ -67,6 +69,7 @@ const ctaFooterHtml = `<section class="cta-banner">
         <a href="/about-us/">About Us</a>
         <a href="/our-plants/">Our Plants</a>
         <a href="/applications/">Applications</a>
+        <a href="/how-to-use/">How to Use</a>
         <a href="/contact/">Contact</a>
       </nav>
     </div>
